@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About – Molly Hsieh</title>
+    <meta name="description" content="About Molly Hsieh – UX / Interaction Designer" />
+
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="./index.html">Molly</a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="./about.html">ABOUT</a>
+          <a class="nav-link" href="./projects.html">PROJECTS</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero / About intro -->
+      <section class="section about-hero">
+        <div class="container">
+          <h1 class="about-hero-title">About</h1>
+
+          <p class="about-hero-tagline">
+            Hi, I’m Molly — a designer who turns everyday observations into usable experiences.
+          </p>
+
+          <p class="about-hero-body">
+            I design interactions that help people make sense of everyday information—where context and emotion are often
+            overlooked. My work focuses on creating culturally grounded, emotionally considerate digital experiences, and
+            I’m building towards UX Engineering by bridging design thinking with front-end implementation.
+          </p>
+        </div>
+      </section>
+
+      <!-- Design focus -->
+      <section class="section about-focus">
+        <div class="container">
+          <h2 class="section-subtitle">Design focus</h2>
+
+          <div class="about-focus-grid">
+            <div class="about-card">
+              <h3 class="about-card-title">Culture & language</h3>
+              <p class="about-card-text">
+                Designing interfaces rooted in everyday culture, language, and local practices to make systems feel
+                familiar and meaningful.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <h3 class="about-card-title">Emotion & clarity</h3>
+              <p class="about-card-text">
+                Reducing cognitive and emotional friction through calm visual hierarchy, gentle feedback, and focused
+                interaction patterns.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <h3 class="about-card-title">Prototype to code</h3>
+              <p class="about-card-text">
+                Turning design concepts into working products using HTML, CSS, JavaScript, and SwiftUI to validate ideas
+                beyond static prototypes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section about-skills">
+        <div class="container">
+          <h2 class="section-subtitle">Skills & tools</h2>
+
+          <div class="about-skills-grid">
+            <div class="skill-block">
+              <h3>Design</h3>
+              <ul>
+                <li>UX research & synthesis</li>
+                <li>Interaction design</li>
+                <li>Information architecture</li>
+                <li>Design systems</li>
+                <li>Prototyping (Figma)</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h3>Development</h3>
+              <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Responsive layout</li>
+                <li>Basic React understanding</li>
+                <li>SwiftUI (iOS prototypes)</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h3>Other</h3>
+              <ul>
+                <li>Product thinking</li>
+                <li>User testing</li>
+                <li>Cross-cultural design</li>
+                <li>Bilingual: English / Chinese</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Background -->
+      <section class="section about-background">
+        <div class="container">
+          <h2 class="section-subtitle">Background</h2>
+
+          <p class="about-background-text">
+            I studied international business in Taiwan and spent a year in Spain studying marketing and graphic design,
+            where I became more aware of how culture, language, and context shape the way people understand information.
+            These experiences now inform my design work, especially in projects that translate everyday knowledge into
+            digital interactions.
+          </p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section about-cta">
+        <div class="container">
+          <div class="about-cta-box">
+            <p class="about-cta-text">Interested in my work?</p>
+            <div class="about-cta-actions">
+              <a class="btn" href="./index.html#projects">View projects</a>
+              <a class="btn btn-ghost" href="./assets/Molly-Hsieh-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+              <a class="btn btn-ghost" href="mailto:your@email.com">Email me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Molly Hsieh</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <noscript>
+      <div class="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+  </body>
+</html>
