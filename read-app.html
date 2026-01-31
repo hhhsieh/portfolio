@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ReadApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./read-app.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="./home.html">Molly</a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="./about.html">ABOUT</a>
+          <a class="nav-link" href="./projects.html">PROJECTS</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <!-- HERO IMAGE -->
+      <header class="hero">
+        <div class="hero__media">
+          <img class="hero__img" src="assets/readapp-hero.jpg" alt="ReadApp hero image" />
+        </div>
+        <div class="hero__copy">
+          <p class="hero__eyebrow">App Design</p>
+          <h1 class="hero__title">ReadApp</h1>
+          <p class="hero__subtitle">
+            A unified iPad reading space that combines EPUBs, web articles, and handwritten notes.
+          </p>
+        </div>
+      </header>
+
+     <!-- BACKGROUND / PROBLEM STATEMENT / CONCEPT / DESIGN GOALS -->
+      <section class="container block-stack">
+        <article class="panel">
+          <h2 class="panel__title">BACKGROUND</h2>
+          <p class="panel__text">
+            I often read eBooks, save articles, and write notes on the iPad, but these actions are split across different apps.<span class="accent-strong">Reading tools lack handwriting, note apps can’t import EPUB or web content directly, and book discovery happens elsewhere</span>.
+            This fragmentation disrupts focus and prevents a continuous reading habit. There is a clear opportunity to integrate reading, handwriting, and discovery into one focused experience on the iPad.
+          </p>
+        </article>
+
+        <div class="divider" aria-hidden="true"></div>
+                <article class="panel">
+          <h2 class="panel__title">PROBLEM STATEMENT</h2>
+          <ol class="panel__list">
+           <li><span class="accent-strong">Reading and handwriting are separated into different apps</span>, interrupting focus and learning flow.</li>
+           <li><span class="accent-strong">Web articles</span> are <span class="accent-strong">filled with distractions</span>  such as ads and cluttered layouts, making deep reading uncomfortable.</li>
+           <li><span class="accent-strong">Book discovery and recommendations happen outside the reading experience</span>, limiting consistent reading habits.</li>
+          </ol>
+        </article>
+        <div class="divider" aria-hidden="true"></div>
+
+        <article class="panel">
+          <h2 class="panel__title">CONCEPT</h2>
+          <p class="panel__text">
+           <span class="accent-strong">ReadApp brings reading, handwriting, and content discovery into one integrated environment</span>.
+           Users can read EPUBs and web articles, handwrite thoughts with Apple Pencil,
+           and explore new books without leaving the reading flow. By reducing distractions and supporting personal reading behaviours, ReadApp encourages deeper focus and more meaningful engagement with digital content.
+          </p>
+        </article>
+        <div class="divider" aria-hidden="true"></div>
+
+        <article class="panel">
+          <h2 class="panel__title">DESIGN GOALS</h2>
+          <ol class="panel__list">
+            <li>Create a <span class="accent-strong">seamless reading and writing workflow</span> without switching between apps.</li>
+            <li>Support <span class="accent-strong">distraction-free</span> and <span class="accent-strong">comfortable reading across books and articles</span>.</li>
+            <li>Encourage <span class="accent-strong">continuous</span> and <span class="accent-strong">personalised reading habits</span> through integrated discovery and reflection.</li>
+          </ol>
+        </article>
+
+        <div class="divider" aria-hidden="true"></div>
+      </section>
+
+
+      <!-- USER PERSONA -->
+      <section class="container section-title">
+        <h2 class="section-title__text">USER PERSONA</h2>
+      </section>
+
+      <!-- USER PERSONA 1 -->
+      <section class="container persona-block">
+        <div class="persona-card">
+          <div class="persona-card__left">
+            <div class="persona-avatar">
+              <img class="persona-avatar__img" src="assets/Christy-Chen.png" alt="Christy Chen" />
+            </div>
+
+            <h3 class="persona-name">Christy Chen</h3>
+
+            <dl class="persona-meta">
+              <div class="meta-row"><dt class="tag">Age</dt><dd>25</dd></div>
+              <div class="meta-row"><dt class="tag">Location</dt><dd>Tainan, Taiwan</dd></div>
+              <div class="meta-row"><dt class="tag">Nationality</dt><dd>Taiwanese</dd></div>
+              <div class="meta-row"><dt class="tag">Occupation</dt><dd>Graphic Designer</dd></div>
+              <div class="meta-row"><dt class="tag">Personality</dt><dd>Visually driven, Motivated by inspiration, Independent thinker</dd></div>
+            </dl>
+          </div>
+
+          <div class="persona-card__right">
+            <article class="persona-panel">
+              <h4 class="persona-panel__title">BACKGROUND</h4>
+              <p class="persona-panel__text">
+                Christy works in branding and digital design. She <span class="accent-strong">often reads design books and online articles on the iPad for inspiration</span>,
+                but <span class="accent-strong">switching</span> to another app to sketch with Apple Pencil <span class="accent-strong">breaks her creative flow</span>.
+                 Her references become scattered across screenshots and folders, making it hard to revisit ideas with context.
+                 She wants a way to capture visual thoughts directly while reading, so inspiration remains connected and usable.
+              </p>
+            </article>
+
+            <article class="persona-panel">
+              <h4 class="persona-panel__title">NEEDS</h4>
+              <ol class="persona-panel__list">
+                <li>Keep <span class="accent-strong">reading content</span> and <span class="accent-strong">handwritten notes</span> in the <span class="accent-strong">same space</span>.</li>
+                <li>Capture visual ideas quickly while reading.</li>
+              </ol>
+            </article>
+
+            <article class="persona-panel">
+              <h4 class="persona-panel__title">PAIN POINTS</h4>
+              <ol class="persona-panel__list">
+                <li>Inspiration notes and sketches are scattered across multiple apps and screenshot folders.</li>
+                <li><span class="accent-strong">Saved articles</span> are <span class="accent-strong">often forgotten</span> and <span class="accent-strong">never revisited</span>.</li>
+              </ol>
+            </article>
+
+            <article class="persona-panel">
+              <h4 class="persona-panel__title">GOALS</h4>
+              <ol class="persona-panel__list">
+                <li>Revisit notes in context and turn ideas into design.</li>
+                <li><span class="accent-strong">Stay focused and maintain the connection</span> between reading and thinking.</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+      </section>
+
+      <!-- USER FLOW -->
+      <section class="container section-title">
+        <h2 class="section-title__text">USER FLOW</h2>
+      </section>
+
+      <section class="container media-block">
+        <img class="media-block__img" src="assets/readapp-userflow.png" alt="User Flow" />
+        <div class="divider" aria-hidden="true"></div>
+      </section>
+
+      <!-- LOGO DEVELOPMENT -->
+      <section class="container section-title">
+        <h2 class="section-title__text">LOGO DEVELOPMENT</h2>
+      </section>
+
+      <section class="container logo-dev">
+        <div class="logo-dev__grid">
+          <!-- Early Sketches -->
+
+          <article class="frame logo-dev-card">
+           <div class="logo-dev-card__text">
+            <h3 class="logo-dev-card__title">Early Sketches</h3>
+              <p class="logo-dev-card__desc">
+                Exploring the idea of “small steps” through footprints and gentle curves, representing gradual growth and becoming a better version of oneself over time.
+              </p>
+              
+            </div>
+            <div class="logo-dev-card__left">
+              <figure class="logo-dev-wide">
+              <img class="logo-dev-wide__img" src="assets/readapp-logo-sketching.png" alt="Sketch sheet" />
+            </figure>
+
+              <figure class="logo-dev-thumb">
+                <div class="logo-dev-thumb__frame">
+                  <img class="logo-dev-thumb__img" src="assets/readapp-logo2.png" alt="Early sketch option A" />
+                </div>
+              </figure>
+
+              <figure class="logo-dev-thumb">
+                <div class="logo-dev-thumb__frame logo-dev-thumb__frame--image">
+                  <img class="logo-dev-thumb__img" src="assets/readapp-logo1.png" alt="Early sketch option B" />
+                </div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Final Sketches -->
+          <article class="frame logo-dev-card">
+            <div class="logo-dev-card__text">
+              <h3 class="logo-dev-card__title">Final Sketches</h3>
+              <p class="logo-dev-card__desc">
+                The logo simplifies the overall shape and reduces visual details to improve recognition at small sizes and on mobile screens, while combining the letter “S”
+                with a footprint to create a simple and recognisable symbol of small, continuous steps.
+              </p>
+            </div>
+            <div class="logo-dev-card__right">
+              <figure class="logo-dev-media">
+                <img class="logo-dev-media__img" src="assets/readapp-logo-sketching2.png" alt="Final sketch photo" />
+              </figure>
+
+              <div class="logo-chip">
+                <img class="logo-chip__img" src="assets/readapp-logo.png" alt="Small Steps logo mark" />
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+      </section>
+
+<!-- VISUAL IDENTITY -->
+      <section class="container section-title">
+        <h2 class="section-title__text">VISUAL IDENTITY</h2>
+      </section>
+
+      <section class="container visual-identity">
+        <div class="vi-grid">
+          <!-- Typography -->
+          <div class="vi-col">
+            <div class="frame vi-card vi-card--type">
+              <div class="pill pill--semi">Inter</div>
+              <div class="pill pill--regular">Inter</div>
+            </div>
+            <h3 class="vi-label">Typography</h3>
+          </div>
+
+          <!-- Colour Palette -->
+          <div class="vi-col">
+            <div class="frame vi-card vi-card--colors">
+              <div class="color-row">
+                <div class="swatch">
+                  <span class="swatch__box" style="background:#ECECEC;"></span>
+                  <span class="swatch__hex">#ECECEC</span>
+                </div>
+                <div class="swatch">
+                  <span class="swatch__box" style="background: #2d2d2d;"></span>
+                  <span class="swatch__hex">#2d2d2d</span>
+                </div>
+                <div class="swatch">
+                  <span class="swatch__box" style="background:#333333;"></span>
+                  <span class="swatch__hex">#333333</span>
+                </div>
+              </div>
+
+              <div class="color-row">
+                <div class="swatch">
+                  <span class="swatch__box swatch__box--border" style="background: #f9f9f9;"></span>
+                  <span class="swatch__hex">#f9f9f9</span>
+                </div>
+                <div class="swatch">
+                  <span class="swatch__box" style="background:#6592F3;"></span>
+                  <span class="swatch__hex">#6592F3</span>
+                </div>
+                <div class="swatch">
+                  <span class="swatch__box" style="background:#BED2FF;"></span>
+                  <span class="swatch__hex">#BED2FF</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="vi-label">Colour Palette</h3>
+          </div>
+
+          <!-- Logo -->
+          <div class="vi-col">
+            <div class="frame vi-card vi-card--logo">
+              <div class="logo-chip">
+                <img class="logo-chip__img" src="assets/readapp-logo.png" alt="Small Steps logo mark" />
+              </div>
+              <p class="logo-chip__caption">Small Steps</p>
+            </div>
+            <h3 class="vi-label">Logo</h3>
+          </div>
+        </div>
+
+        <div class="divider" aria-hidden="true"></div>
+      </section>
+
+      <!-- USER INTERFACE -->
+      <section class="container section-title">
+        <h2 class="section-title__text">USER INTERFACE</h2>
+     </section>
+          <section class="container media-block">
+               <div class="media-block__images">
+               <img class="media-block__img" src="assets/readapp-user-interface.png" alt="UI 1" />
+               </div>
+          </section>
+    </main>
+  </body>
+</html>

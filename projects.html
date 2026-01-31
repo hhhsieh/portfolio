@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Molly Hsieh's Portfolio</title>
+    <meta name="description" content="Molly Hsieh's Portfolio" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./projects.css" />
+
+  </head>
+
+  <body>
+    <!-- Fixed Top Nav -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="./home.html">Molly</a>
+
+        <div class="nav-links">
+          <a class="nav-link" href="./about.html">ABOUT</a>
+          <a class="nav-link" href="./projects.html">PROJECTS</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="big-title">PROJECTS</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <a class="project-link" href="./small-steps.html" aria-label="Open Small Step project page">
+                <div class="project-media">
+                  <img src="./assets/small-steps.jpg" alt="Small Step preview" loading="lazy" />
+                </div>
+                <div class="project-meta">
+                  <h3 class="project-name">Small Step</h3>
+                  <p class="project-type">App design</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a class="project-link" href="./tang-tai-pork-stall.html" aria-label="Open Tang-Tai Pork Stall project page">
+                <div class="project-media">
+                  <img src="./assets/porkk.jpg" alt="Tang-Tai Pork Stall preview" loading="lazy" />
+                </div>
+                <div class="project-meta">
+                  <h3 class="project-name">Tang-Tai Pork Stall</h3>
+                  <p class="project-type">Web design</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <a class="project-link" href="./read-app.html" aria-label="Open Read App project page">
+                <div class="project-media">
+                  <img src="./assets/read-app.jpg" alt="Read App preview" loading="lazy" />
+                </div>
+                <div class="project-meta">
+                  <h3 class="project-name">Read App</h3>
+                  <p class="project-type">App design</p>
+                </div>
+              </a>
+            </article>
+            
+            <a class="project-link" href="https://shouldiquitmyjobtoday.com/index-en.html" target="_blank" rel="noopener" aria-label="Visit Should I Quit My Job Today">
+              <article class="project-card">
+                <div class="project-media">
+                  <img src="./assets/q.jpg" alt="Should I Quit My Job Today? preview" loading="lazy" />
+                </div>
+                <div class="project-meta">
+                  <h3 class="project-name">Should I Quit My Job Today?</h3>
+                  <p class="project-type">Web design</p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Molly Hsieh</small>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <noscript>
+      <div class="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+  </body>
+</html>
