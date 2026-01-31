@@ -1,0 +1,131 @@
+/* =========================
+   Projects
+========================= */
+:root{
+  --bg: #f3f2ee;
+  --nav-bg: rgba(253, 250, 246, 0.9);
+  --text: #1f1c16;
+  --muted: #6b625a;
+  --accent: #7a7b55;
+  --tag-bg: #e2e0d6;
+  --line: rgba(31, 28, 22, 0.18);
+}
+
+.container{
+  width: min(var(--container), calc(100% - 96px));
+}
+
+.section-title {
+  padding: 24px 0 0;
+}
+
+.big-title {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: clamp(40px, 5vw, 72px);
+  color: var(--text);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+}
+.projects {
+  padding-top: 32px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.project-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.project-link {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-decoration: none; /* 建議補上：避免底線 */
+  color: inherit;        /* 建議補上：避免變藍 */
+}
+
+.project-meta {
+  padding: 22px 22px 14px;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.8px;
+}
+
+.project-type {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+.project-media {
+  aspect-ratio: 3 / 4;
+  background: #eee;
+}
+
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+  padding: 40px 0;
+  border-top: var(--border);
+}
+
+.site-footer small {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* =========================
+   NoScript
+========================= */
+.noscript {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: #111;
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
