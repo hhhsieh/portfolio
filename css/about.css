@@ -2,20 +2,16 @@
    About Page – Base helpers
 ========================= */
 :root{
-  --bg: #f5f0f4;
+  --bg: #f6f1ea;
   --nav-bg: rgba(253, 250, 246, 0.9);
   --text: #1f1c16;
   --muted: #6b625a;
-  --accent: #7b5b6a;
-  --tag-bg: #eadde5;
+  --accent: #C9A300;
+  --tag-bg: #e6e0d8;
   --line: rgba(31, 28, 22, 0.18);
 }
 
-body{
-  background: radial-gradient(1200px 600px at 10% 0%, #f8f2f7 0%, rgba(248,242,247,0) 60%),
-    radial-gradient(900px 520px at 90% 12%, #f2edf6 0%, rgba(242,237,246,0) 60%),
-    var(--bg);
-}
+
 
 /* Container + section rhythm (won't override if you already define them later) */
 .container{
